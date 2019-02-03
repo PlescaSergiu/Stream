@@ -3,6 +3,7 @@ package homework;
 
 import java.io.IOException;
 import java.nio.file.*;
+import java.time.Month;
 import java.util.stream.Stream;
 import static java.nio.file.Files.lines;
 
@@ -10,9 +11,9 @@ import static java.nio.file.Files.lines;
 public class WriteToFile {
 
 
-    public void writeToFile(String month) {
+    public void writeToFile(int month) {
 
-        String search = month;
+        String search = Month.of(month).name().toLowerCase();
 
         try (Stream<String> stream = lines(Paths.get("C:\\Java\\HomeWorkStream\\Read.csv"))) {
             stream
