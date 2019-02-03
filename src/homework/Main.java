@@ -7,6 +7,6 @@ public class Main {
     public static void  main(String...args){
 
     WriteToFile writeToFile =  new WriteToFile();
-    writeToFile.writeToFile("19");
+    writeToFile.writeToFile("04");
     }
 }
